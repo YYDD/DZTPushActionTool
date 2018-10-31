@@ -19,30 +19,30 @@ typedef enum : NSUInteger {
 
 
 
-#define SDCRoutePushToVC(ViewController,beAnimated)\
-UINavigationController *nav = [UIApplication sharedApplication].sdc_navigationController;\
+#define DZTRoutePushToVC(ViewController,beAnimated)\
+UINavigationController *nav = [UIApplication sharedApplication].dzt_navigationController;\
 [nav pushViewController:ViewController animated:beAnimated];
 
 
-#define SDCRoutePopVC(beAnimated)\
-UINavigationController *nav = [UIApplication sharedApplication].sdc_navigationController;\
+#define DZTRoutePopVC(beAnimated)\
+UINavigationController *nav = [UIApplication sharedApplication].dzt_navigationController;\
 [nav popViewControllerAnimated:beAnimated]
 
 
 
-#define SDCRoutePopToRoot(beAnimated)\
-UINavigationController *nav = [UIApplication sharedApplication].sdc_navigationController;\
+#define DZTRoutePopToRoot(beAnimated)\
+UINavigationController *nav = [UIApplication sharedApplication].dzt_navigationController;\
 [nav popToRootViewControllerAnimated:beAnimated];
 
 
 
-#define SDCRoutePopToVC(ViewController,beAnimated)\
-UINavigationController *nav = [UIApplication sharedApplication].sdc_navigationController;\
+#define DZTRoutePopToVC(ViewController,beAnimated)\
+UINavigationController *nav = [UIApplication sharedApplication].dzt_navigationController;\
 [nav popToViewController:ViewController animated:beAnimated];
 
 
-#define SDCRoutePresentToVC(ViewController,beAnimated)\
-UINavigationController *nav = [UIApplication sharedApplication].sdc_navigationController;\
+#define DZTRoutePresentToVC(ViewController,beAnimated)\
+UINavigationController *nav = [UIApplication sharedApplication].dzt_navigationController;\
 CATransition *transition = [CATransition animation];\
 transition.duration = 0.35f;\
 transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];\
@@ -52,8 +52,8 @@ transition.subtype = kCATransitionFromTop;\
 [nav pushViewController:ViewController animated:NO];\
 
 
-#define SDCRouteDismissToVC(beAnimated)\
-UINavigationController *nav = [UIApplication sharedApplication].sdc_navigationController;\
+#define DZTRouteDismissToVC(beAnimated)\
+UINavigationController *nav = [UIApplication sharedApplication].dzt_navigationController;\
 CATransition *transition = [CATransition animation];\
 transition.duration = 0.35f;\
 transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];\
