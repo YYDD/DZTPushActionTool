@@ -11,8 +11,8 @@ Pod::Spec.new do |spec|
 
 #  spec.source       = { :git => 'https://github.com/YYDD/DZTPushActionTool.git',:tag => spec.version}
   spec.source       = { :git => 'https://github.com/YYDD/DZTPushActionTool.git'}
-#  spec.source_files = 'DZTPushActionCommon/*.{h,m}'
-#  spec.public_header_files = 'DZTPushActionCommon/*.{h}'
+  spec.source_files = 'DZTPushActionCommon/*.{h,m}'
+  spec.public_header_files = 'DZTPushActionCommon/*.{h}'
 
 
  
